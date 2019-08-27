@@ -1,0 +1,26 @@
+.greeting__wrapper h1 {
+    text-align: center;
+    margin: 10px 0 0;
+}
+
+.greeting__wrapper__teamImg {
+    max-width: 100%;
+    background-size: auto;
+    display: block;
+    margin: 0 auto;
+    border-radius: 5px;
+}
+
+.greeting__wrapper img {
+    animation-duration: .8s;
+    animation-name: show;
+}
+
+@keyframes show {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
