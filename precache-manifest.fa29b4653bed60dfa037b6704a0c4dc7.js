@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "f2485d50d61345b0b41ada5fd68e51a7",
+    "revision": "a4507c86045b8cad92597608411fd1a3",
     "url": "/Museum-Guidelines/index.html"
   },
   {
@@ -8,8 +8,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/Museum-Guidelines/static/css/main.0e3cd7a3.chunk.css"
   },
   {
-    "revision": "f8e6c00df13cbbc4c011",
-    "url": "/Museum-Guidelines/static/js/2.d927b9d1.chunk.js"
+    "revision": "db14457ec85e55987a18",
+    "url": "/Museum-Guidelines/static/js/2.e1e5e9cf.chunk.js"
   },
   {
     "revision": "9fb3b1b4f7eebd7ee6fe",
