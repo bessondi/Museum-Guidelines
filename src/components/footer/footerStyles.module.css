@@ -1,8 +1,12 @@
 footer {
-    max-width: 700px;
-    margin: 60px auto 30px;
-    padding-top: 20px;
-    border-top: 1px solid #EBEBEB;
+
+    width: 100%;
+    margin: 60px auto 0;
+    padding: 20px 0;
+    /* margin: 60px auto 30px;
+    padding-top: 20px; */
+    /* border-top: 1px solid #EBEBEB; */
+    background-color: #ebebeb;
 }
 
 .footer p, .footer a {
@@ -19,37 +23,52 @@ h4 {
     font-weight: 500;
 }
 
+.footer__wrapper {
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
 .footer__wrapper, .footer__wrapper__contacts__mail {
     display: flex;
     justify-content: space-between;
     flex-direction: column;
 }
 
-.footer__wrapper__socical {
+.footer__wrapper__contacts__mail:last-child {
+    text-align: end;
+}
+
+.footer__wrapper__social {
     display: flex;
     justify-content: space-between;
     flex-direction: row;
     align-items: center;
 }
 
-.footer__wrapper__socical__icons {
+.footer__wrapper__social__icons {
     display: flex;
     flex-direction: row;
     list-style: none;
     margin: 0;
 }
 
-.footer__wrapper__socical__icons li {
-    margin: 0 0 0 20px;
+.footer__wrapper__social__icons li {
+    margin-left: 20px;
 }
 
-.footer__wrapper__socical__icons_active:hover {
-    filter:
-            invert(0.5)
-            sepia(1)
-            hue-rotate(170deg)
-            saturate(4)
-            brightness(0.7);
+.footer__wrapper__social__icons li:first-child {
+    margin-left: 0;
+}
+
+.footer__wrapper__social__icons_active:hover {
+    transform: scale(0.95)
+    /*filter:*/
+            /*invert(0.5)*/
+            /*sepia(1)*/
+            /*hue-rotate(170deg)*/
+            /*saturate(4)*/
+            /*brightness(0.7);*/
 }
 
 
@@ -62,14 +81,14 @@ h4 {
 }
 
 @media screen and (max-width: 900px) {
-    .footer {
+    /* .footer {
         margin: 60px auto 30px;
-    }
+    } */
 }
 
 @media screen and (max-width: 700px) {
-    .footer {
-        margin: 40px 20px 10px;
+    .footer__wrapper__contacts__mail:last-child {
+        text-align: center;
     }
 
     .footer__wrapper_center {
@@ -85,11 +104,11 @@ h4 {
         margin-top: 20px;
     }
 
-    .footer__wrapper__contacts, .footer__wrapper__socical {
+    .footer__wrapper__contacts, .footer__wrapper__social {
         flex-direction: column;
     }
 
-    .footer__wrapper__socical__icons {
+    .footer__wrapper__social__icons {
         margin: 20px 0 0 0;
         padding: 0;
     }

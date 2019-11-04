@@ -33,6 +33,7 @@
     margin-top: 15px;
 }
 
+.wrapper__gadgetImages,
 .wrapper__routeImages {
     width: 250px;
     height: 250px;
@@ -40,6 +41,20 @@
     border-radius: 10px;
     animation-duration: 1s;
     animation-name: show;
+}
+
+.wrapper__badgeImages {
+    max-width: 500px;
+    width: 100%;
+    margin: 10px 0;
+    border-radius: 10px;
+    animation-duration: 1s;
+    animation-name: show;
+}
+
+.wrapper__gadgetImages {
+    border-radius: 50%;
+    border: 1px solid #ebebeb;
 }
 
 .alignLeftTable li {
@@ -218,6 +233,7 @@ thead th:nth-child(5) {
     width: 180px;
     height: 180px;
     border-radius: 50%;
+    border: 1px solid #ebebeb;
 }
 
 .main__structure__wrapper__namesSection__item__topManagementImage {
@@ -267,6 +283,12 @@ thead th:nth-child(5) {
         width: 550px;
         height: 400px;
     }
+
+    .wrapper__routeImages,
+    .wrapper__gadgetImages {
+        display: block;
+        margin: 10px auto;
+    }
 }
 
 /* media > 1200 */
@@ -286,11 +308,11 @@ thead th:nth-child(5) {
     }
 
     .main__museum__wrapper_boxInfoNames {
-        max-width: 145px;
+        max-width: 140px;
         font-size: 0.8rem;
     }
 
-    .main__structure__wrapper__namesSection {
+    /* .main__structure__wrapper__namesSection { */
         /* старые стили */
         /*display: flex;*/
         /*flex-flow: row wrap;*/
@@ -299,7 +321,7 @@ thead th:nth-child(5) {
         /*justify-content: space-around;*/
         /*text-align: center;*/
         /*width: 750px;*/
-    }
+    /* } */
 
     .main__structure__wrapper__namesSection__museumManagementItems {
         max-width: 150px;
@@ -318,7 +340,6 @@ thead th:nth-child(5) {
     .main__structure__wrapper__namesSection__item__position {
         min-width: 250px;
     }
-
 }
 
 /* media > 1200 */

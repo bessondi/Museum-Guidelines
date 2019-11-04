@@ -1,3 +1,21 @@
+.main__homePage__wrapper__mainMuseumTitle {
+    font-family: 'PF Agora Sans Pro', sans-serif;
+    font-size: 3.2rem;
+    margin-top: 20px;
+    color: rgb(110, 107, 106);
+    text-transform: uppercase;
+    min-height: 40px;
+}
+
+.main__homePage__wrapper__mainTitle {
+    font-size: 2rem;
+    line-height: 100%;
+}
+
+.main__homePage__description {
+    margin: 0 0 10px;
+}
+
 .main__homePage__wrapper {
     display: flex;
     justify-content: center;
@@ -19,14 +37,16 @@
 
 .main__homePage__wrapper__linkBtn {
     border-radius: 3px;
-    height: 40px;
+    height: 50px;
     line-height: 22px;
     padding: 9px 20px 11px;
     box-shadow: 0 0 0 1px rgba(14, 81, 129, 0.7), 0 1px 0 0 rgba(7, 37, 80, 0.5);
     background: linear-gradient(#2899ea, #167ac1);
     border: none;
     color: #fff;
-    font-size: 0.8rem;
+    font-size: 0.9rem;
+    max-width: 100%;
+    width: 250px;
 }
 
 .main__homePage__wrapper__linkBtn:hover {
@@ -67,7 +87,7 @@
 @media screen and (max-width: 900px) {
     .main__homePage__wrapper_columns {
         flex-direction: column;
-        height: 250px;
+        height: 280px;
         padding: 0;
         margin: 0;
     }

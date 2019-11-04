@@ -4,13 +4,60 @@ import LazyLoad from 'react-lazy-load';
 import ScrollbarTop from "../../header/scrollbar/scrollbarTop";
 import Scrollspy from "react-scrollspy";
 import ScrollToTop from "../scrollToTopBtn/scrollToTopBtn";
+import TextGradient from '../stickyTextGradient';
 
 import styles from '../instructionsMainStyles.module.css';
 
+import Vekselberg from '../../../media/linkOfTimes.jpg';
+import Voronchenko from '../../../media/linkOfTimes.jpg';
+import Shulekina from '../../../media/linkOfTimes.jpg';
+import Umarov from '../../../media/linkOfTimes.jpg';
+import Thaker from '../../../media/linkOfTimes.jpg';
+import Ovchinnikov from '../../../media/linkOfTimes.jpg';
+import Ovchinnikov1 from '../../../media/Fab.jpeg';
+import Agap from '../../../media/Fab.jpeg';
+
 import frontOff from '../../../media/Fab.jpeg';
 import linkOfTimes from '../../../media/linkOfTimes.jpg';
+import Grig from '../../../media/Fab.jpeg';
+import Smirn from '../../../media/Fab.jpeg';
+import Pavl from '../../../media/Fab.jpeg';
+import Shvets from '../../../media/Fab.jpeg';
+import Bess from '../../../media/Fab.jpeg';
+import Star from '../../../media/Fab.jpeg';
+import Grank from '../../../media/Fab.jpeg';
+import Zbur from '../../../media/Fab.jpeg';
+import Sherb from '../../../media/Fab.jpeg';
+
+import Kuzm from '../../../media/Fab.jpeg';
+import Ches from '../../../media/Fab.jpeg';
+import Bulin from '../../../media/Fab.jpeg';
+import Alexeev from '../../../media/Fab.jpeg';
+import Vasilev from '../../../media/Fab.jpeg';
+import cleaning from '../../../media/cleaning.jpg';
+
+import Savina from '../../../media/Fab.jpeg';
+import Abubova from '../../../media/Fab.jpeg';
+import Zarubina from '../../../media/Fab.jpeg';
+
+import Puchkova from '../../../media/Fab.jpeg';
+import Pshen from '../../../media/Fab.jpeg';
+import Kud from '../../../media/Fab.jpeg';
+
 import kombat from '../../../media/kombat.jpeg';
+
+import Chern from '../../../media/Fab.jpeg';
+import Berez from '../../../media/Fab.jpeg';
+import Smirnov from '../../../media/Fab.jpeg';
+import Kogan from '../../../media/Fab.jpeg';
+
+import Fedotov from '../../../media/cafe.jpeg';
 import cafe from '../../../media/cafe.jpeg';
+import Neimohov from '../../../media/cafe.jpeg';
+
+import Guseva from '../../../media/cafe.jpeg';
+import Zinov from '../../../media/cafe.jpeg';
+import Rudenko from '../../../media/cafe.jpeg';
 
 import Gabsb from '../../../media/Gabsburg.jpeg';
 import Munt from '../../../media/Munt.jpeg';
@@ -29,34 +76,39 @@ class Structure extends Component {
             topManagementDepartment: [
                 {
                     id: 1,
-                    img: frontOff,
+                    img: Vekselberg,
+                    name: 'Вексельберг Виктор Феликсович',
+                    post: 'Учредитель НО "Культурно-исторический Фонд "Связь времен"'
+                },
+                {
+                    id: 2,
+                    img: Voronchenko,
                     name: 'Воронченко Владимир Сергеевич',
                     post: 'Председатель правления НО "Культурно-исторический Фонд "Связь времен". Директор музея Фаберже'
                 }
             ],
             managementDepartment: [
-
                 {
                     id: 1,
-                    img: frontOff,
+                    img: Shulekina,
                     name: 'Шулекина Анна Викторовна',
                     post: 'Исполнительный директор НО "Культурно-исторический Фонд "Связь времен"'
                 },
                 {
                     id: 2,
-                    img: frontOff,
+                    img: Ovchinnikov,
                     name: 'Овчинников Михаил Владимирович',
-                    post: 'Первый заместитель директора Музея Фаберже, директор филиала НО "Культурно-исторический Фонд "Связь времен" в г. Санкт-Петербург',
+                    post: 'Первый заместитель исполнительного директора Музея Фаберже, директор филиала НО "Культурно-исторический Фонд "Связь времен" в г. Санкт-Петербург',
                 },
                 {
                     id: 3,
-                    img: frontOff,
+                    img: Umarov,
                     name: 'Умаров Ринат',
                     post: 'Заместитель председателя НО "Культурно-исторический Фонд "Связь времен"'
                 },
                 {
                     id: 4,
-                    img: frontOff,
+                    img: Thaker,
                     name: 'Такер Роман',
                     post: 'Заместитель председателя НО "Культурно-исторический Фонд "Связь времен"'
                 },
@@ -114,37 +166,32 @@ class Structure extends Component {
             headersOfDepartsments: [
                 {
                     id: 1,
-                    img: frontOff,
+                    img: Kuzm,
                     name: 'Кузьмичева Елена Юрьевна',
                     post: 'Заместитель директора филиала по эксплуатации здания'
                 },
                 {
                     id: 2,
-                    img: frontOff,
-                    name: 'Дмитрий Евгеньевич',
-                    post: 'Заместитель директора филиала по безопасности'
-                },
-                {
-                    id: 3,
-                    img: frontOff,
+                    img: Puchkova,
                     name: 'Пучкова Екатерина',
                     post: 'Заместитель директора филиала по связям с общественностью'
                 },
                 {
-                    id: 4,
-                    img: frontOff,
+                    id: 3,
+                    img: Grig,
                     name: 'Григорьева София Михайловна',
                     post: 'Заместитель директора по организационной работе и развитию',
                     func: 'Руководитель службы приема посетителей'
                 },
                 {
-                    id: 5,
-                    img: frontOff,
+                    id: 4,
+                    img: Savina,
                     name: 'Савина Марина',
                     post: 'Главный бухгалтер филиала НО КИФ “Связь времен” в г. Санкт-Петербург'
-                },{
-                    id: 6,
-                    img: frontOff,
+                },
+                {
+                    id: 5,
+                    img: Kogan,
                     name: 'Коган Ирина',
                     post: 'Хранитель. Научный отдел.'
                 }
@@ -152,48 +199,62 @@ class Structure extends Component {
             frontOffice: [
                 {
                     id: 1,
-                    img: frontOff,
-                    name: 'Грибкова Екатерина',
-                    post: 'Менеджер по корпоративным клиентам',
+                    img: Smirn,
+                    name: 'Смирнова Ирина',
+                    post: 'Менеджер по работе с корпоративными клиентами',
                     func: 'Работа с турфирмами, с заявками на экскурсионное обслуживание, безналичными платежами'
                 },
                 {
                     id: 2,
-                    img: frontOff,
+                    img: Pavl,
                     name: 'Павлинова Екатерина',
                     post: 'Старший экскурсовод-администратор',
                     func: 'Аккредитованные гиды, экскурсоводы Фонда, составление расписания экскурсий, графика работы гидов'
                 },
                 {
                     id: 3,
-                    img: frontOff,
-                    name: 'Швецова Варвара',
-                    post: 'Старший администратор',
-                    func: 'График работы кассиров-администраторов, обучение сотрудников, контроль за качеством сервиса'
-                },
-                {
-                    id: 4,
-                    img: frontOff,
-                    name: 'Бессонов Дмитрий',
-                    post: 'Администратор',
-                    func: 'Верстка, дизайн, полиграфия, фото и видео съемка, монтаж'
-                },
-                {
-                    id: 5,
-                    img: frontOff,
+                    img: Star,
                     name: 'Старовойтова Екатерина',
                     post: 'Экскурсовод-администратор',
                     func: 'Координатор детских программ'
                 },
                 {
+                    id: 4,
+                    img: Shvets,
+                    name: 'Швецова Варвара',
+                    post: 'Старший администратор',
+                    func: 'График работы кассиров-администраторов, обучение сотрудников, контроль за качеством сервиса'
+                },
+                {
+                    id: 5,
+                    img: Zbur,
+                    name: 'Збуржинская Елизавета',
+                    post: 'Старший кассир-администратор',
+                    func: 'Обучение кассиров, контроль за соблюдением кассовой дисциплины, кассовой техникой и радиогидами'
+                },
+                {
                     id: 6,
-                    img: frontOff,
+                    img: Sherb,
+                    name: 'Щербакова Кристина',
+                    post: 'Старший кассир-администратор',
+                    func: 'Заказ канцелярии, контроль за кассовой техникой и аудиогидами'
+                },
+                {
+                    id: 7,
+                    img: Grank,
                     name: 'Гранкина Анастасия',
                     post: 'Экскурсовод-администратор',
                     func: 'Волонтерская программа'
                 },
                 {
-                    id: 7,
+                    id: 8,
+                    img: Bess,
+                    name: 'Бессонов Дмитрий',
+                    post: 'Администратор',
+                    func: 'Верстка, дизайн, полиграфия, фото и видео съемка, монтаж'
+                },
+                {
+                    id: 9,
                     img: frontOff,
                     name: 'Фронт-офис',
                     post: 'Экскурсоводы-администраторы и кассиры-администраторы'
@@ -202,45 +263,45 @@ class Structure extends Component {
             maintenanceService: [
                 {
                     id: 1,
-                    img: frontOff,
-                    name: 'Булин Евгений',
-                    post: 'Инженер по пожарной безопасности и охране труда'
-                },
-                {
-                    id: 2,
-                    img: frontOff,
-                    name: 'Алексеев Павел',
-                    post: 'Электрик'
-                },
-                {
-                    id: 3,
-                    img: frontOff,
-                    name: 'Васильев Евгений',
-                    post: 'Электрик'
-                },
-                {
-                    id: 4,
-                    img: frontOff,
+                    img: Ches,
                     name: 'Чеснакова Татьяна Дмитриевна',
                     post: 'Заведующая хозяйственной частью',
                     func: 'Закупка расходных материалов, выдача бланков билетов'
                 },
                 {
+                    id: 2,
+                    img: Bulin,
+                    name: 'Булин Евгений',
+                    post: 'Инженер по пожарной безопасности и охране труда'
+                },
+                {
+                    id: 3,
+                    img: Alexeev,
+                    name: 'Алексеев Павел',
+                    post: 'Электрик'
+                },
+                {
+                    id: 4,
+                    img: Vasilev,
+                    name: 'Васильев Евгений',
+                    post: 'Электрик'
+                },
+                {
                     id: 5,
-                    img: frontOff,
+                    img: cleaning,
                     name: 'Сотрудницы клининговой службы'
                 },
             ],
             bookKeeping: [
                 {
                     id: 1,
-                    img: frontOff,
+                    img: Abubova,
                     name: 'Абубова Жанна',
                     post: 'Бухгалтер'
                 },
                 {
                     id: 2,
-                    img: frontOff,
+                    img: Zarubina,
                     name: 'Зарубина Ирина',
                     post: 'Бухгалтер',
                     func: 'Кадровое делопроизводство'
@@ -249,49 +310,60 @@ class Structure extends Component {
             prDepartment: [
                 {
                     id: 1,
-                    img: frontOff,
+                    img: Pshen,
                     name: 'Пшеничникова Анастасия',
-                    post: 'СММ-специалист'
+                    post: 'PR-менеджер',
+                    func: 'Создание контента для поддержки сайта и развития соц-сетей'
+                },
+                {
+                    id: 2,
+                    img: Kud,
+                    name: 'Дарья Кудинова',
+                    post: 'Интернет-маркетолог',
+                    func: 'Продвижение Музея Фаберже через таргетированную и контекстную рекламу в сети'
                 }
             ],
             security: [
                 {
                     id: 1,
                     img: kombat,
-                    name: 'Старший смены охраны',
-                    post: 'Cотрудник “Комбат”'
+                    post: 'Cотрудник “Комбат”, старший смены'
                 },
                 {
                     id: 2,
                     img: kombat,
-                    name: 'Старший смены охраны',
-                    post: 'Cотрудник “Комбат”'
+                    post: 'Cотрудник “Комбат”, старший смены'
                 },
                 {
                     id: 3,
                     img: kombat,
-                    name: 'Старший смены охраны',
-                    post: 'Cотрудник “Комбат”'
+                    post: 'Cотрудник “Комбат”, старший смены'
                 }
             ],
             otherDepartment: [
                 {
                     id: 1,
-                    img: frontOff,
+                    img: Agap,
                     name: 'Агапова Татьяна',
                     post: 'Секретарь филиала НО "Культурно-исторический Фонд "Связь времен" в г. Санкт-Петербург'
                 },
                 {
                     id: 2,
-                    img: frontOff,
+                    img: Smirnov,
+                    name: 'Смирнов Илья',
+                    post: 'Водитель филиала НО "Культурно-исторический Фонд "Связь времен" в г. Санкт-Петербург'
+                },
+                {
+                    id: 3,
+                    img: Chern,
                     name: 'Черных Ксения',
                     post: 'Менеджер по проектам'
                 },
                 {
-                    id: 3,
-                    img: frontOff,
-                    name: 'Смирнов Илья',
-                    post: 'Водитель филиала НО "Культурно-исторический Фонд "Связь времен" в г. Санкт-Петербург'
+                    id: 4,
+                    img: Berez,
+                    name: 'Березина Елена',
+                    post: 'Менеджер по туризму'
                 }
             ],
             lendomManagementDepartment: [
@@ -303,8 +375,14 @@ class Structure extends Component {
                 },
                 {
                     id: 2,
-                    img: cafe,
+                    img: Fedotov,
                     name: 'Федотов Антон Андреевич',
+                    post: 'Заместитель генерального директора ООО “Лендом Плюс”'
+                },
+                {
+                    id: 3,
+                    img: Neimohov,
+                    name: 'Неймохов Егор Егорович',
                     post: 'Заместитель генерального директора ООО “Лендом Плюс”'
                 }
             ],
@@ -330,19 +408,19 @@ class Structure extends Component {
             shopDepartment: [
                 {
                     id: 1,
-                    img: cafe,
+                    img: Guseva,
                     name: 'Гусева Кристина',
                     post: 'Директор по закупкам'
                 },
                 {
                     id: 2,
-                    img: cafe,
+                    img: Zinov,
                     name: 'Зиновьева Дарья',
                     post: 'Администратор'
                 },
                 {
                     id: 3,
-                    img: cafe,
+                    img: Rudenko,
                     name: 'Руденко Юлия',
                     post: 'Администратор'
                 },
@@ -377,36 +455,43 @@ class Structure extends Component {
                     id: 1,
                     img: Gabsb,
                     name: 'Геза фон Габсбург',
+                    // post: 'Независимый исследователь, искусствовед, куратор многочисленных выставок, посвященных Фаберже и его современникам, куратор Музея изящных искусств Вирджинии, консультант аукционного дома Sotheby’s'
                 },
                 {
                     id: 2,
                     img: Munt,
                     name: 'Татьяна Мунтян',
+                    // post: 'Хранитель коллекции Фаберже в Оружейной Палате Московского Кремля, автор многочисленных книг и статей, посвященных Фаберже и его современникам, куратор выставок Фаберже во многих музеях мира'
                 },
                 {
                     id: 3,
                     img: Skurl,
                     name: 'Валентин Скурлов',
+                    // post: 'Кандидат искусствоведения, специалист по архивным изысканиям, выявивший огромное количество документов по заказам Фаберже, в частности, все счета на пасхальные яйца; автор многочисленных книг по истории фирмы Карла Фаберже, в том числе и уникального исследования по системе клеймения; консультант аукционного дома Christie’s.'
                 },
                 {
                     id: 4,
                     img: Shaff,
                     name: 'Марк Шаффер',
+                    // post: 'Управляющий нью-йоркской антикварной галереей A la Vieille Russie, основанной в 1851 году в Киеве, специализирующейся на произведениях ювелирного и изобразительного искусства дореволюционной России, изделиях Фаберже'
                 },
                 {
                     id: 5,
                     img: McCart,
                     name: 'Кирен МакКарти',
+                    // post: 'Директор лондонской антиквартной компании Wartski, специализирующейся на изделиях Фаберже; искусствовед, обнаруживший в 2011 году утерянное, третье яйцо императорской серии'
                 },
                 {
                     id: 6,
                     img: Solod,
                     name: 'Александр фон Солодкофф',
+                    // post: 'Известный специалист по русскому ювелирному искусству, автор книг по Фаберже, русскому золотому и серебряному делу'
                 },
                 {
                     id: 7,
                     img: Ulla,
                     name: 'Улла Тилландер-Гуденйелм',
+                    // post: 'Независимый исследователь, искусствовед, специалист по финским мастерам фирмы Фаберже; куратор выставок и автор нескольких книг по ювелирному искусству России начала XX века; правнучка ювелира Александра Тилландера, сотрудничавшего с фирмой Фаберже'
                 },
             ]
         }
@@ -550,12 +635,11 @@ class Structure extends Component {
                         <div className={styles.main__structure__wrapper__namesSection__museumManagementItems}>
                             <img
                                 className={styles.main__structure__wrapper__namesSection__item__managementImage}
-                                src={frontOff}
+                                src={Ovchinnikov1}
                                 alt="Овчинников Михаил Владимирович"/>
                             <p className={styles.main__structure__wrapper__namesSection__item__name}><b>Овчинников
                                 Михаил Владимирович</b></p>
-                            <p className={styles.main__structure__wrapper__namesSection__item__position}>Первый заместитель директора Музея Фаберже, директор филиала НО "Культурно-исторический Фонд "Связь времен" в
-                                г. Санкт-Петербург</p>
+                            <p className={styles.main__structure__wrapper__namesSection__item__position}>Первый заместитель исполнительного директора Музея Фаберже, директор филиала НО "Культурно-исторический Фонд "Связь времен" в г. Санкт-Петербург</p>
                         </div>
                     </LazyLoad>
                 </div>
@@ -644,6 +728,7 @@ class Structure extends Component {
                             <b>{item.name}</b>
                         </p>
                         <p>{item.post}</p>
+                        <p>{item.func}</p>
                     </div>
                 </LazyLoad>
             ));
@@ -885,7 +970,7 @@ class Structure extends Component {
                         <Experts/>
                         <Lendom/>
                     </div>
-
+                    <TextGradient/>
                     <ScrollToTop/>
                 </React.Fragment>
             )

@@ -45,13 +45,13 @@ const Header = () => {
             position: absolute;
             top: 60px;                     
             max-width: 200px;
-            
             display: flex;
             flex-flow: column;
             list-style: none;
             margin: 0;
             padding: 0;
-            background: #2e2e2e;
+            background: #4a4a4a;
+            box-shadow: 20px 10px 30px rgba(0, 0, 0, .1);
         `;
         const SubItems = styled.li`
             position: relative;
@@ -60,7 +60,6 @@ const Header = () => {
             font-size: 0.8em;
             border-bottom: 1px solid #9a9a9a;
         `;
-
 
         let ShowMenu = () => {
             let menu = document.getElementById('hiddenMenu');
@@ -76,53 +75,14 @@ const Header = () => {
             <MenuList>
 
                 <MenuItem className={styles.header__wrapper__nav__linkBtn}> {/*li*/}
-                    <NavLink to='/reports'>Отчеты</NavLink>
-
-                    <SubMenuList> {/*ul*/}
-                        <a href="https://docs.google.com/">
-                            <SubItems>Контрольно-обходной лист</SubItems>
-                        </a>
-
-                        <a href="https://forms.gle/">
-                            <SubItems>Отчет по аудиогидам</SubItems>
-                        </a>
-
-                        <a href="https://forms.gle/">
-                            <SubItems>Отчет по радиогидам</SubItems>
-                        </a>
-
-                        <a href="https://docs.google.com/">
-                            <SubItems>Отчет по продажам в кассе</SubItems>
-                        </a>
-
-                        <a href="https://docs.google.com/">
-                            <SubItems>Бланки Navision</SubItems>
-                        </a>
-
-                        <a href="https://docs.google.com/">
-                            <SubItems>Ошибки Booking</SubItems>
-                        </a>
-
-                        <a href="https://docs.google.com/">
-                            <SubItems>Оптовое приобретение входных билетов</SubItems>
-                        </a>
-
-                        <a href="https://docs.google.com/">
-                            <SubItems>Продажа веб-билетов viator/get your guide</SubItems>
-                        </a>
-
-                        <a href="https://docs.google.com/">
-                            <SubItems>Гостевые билеты</SubItems>
-                        </a>
-
-                    </SubMenuList>
+                    <NavLink to='/greeting'>Приветствие</NavLink>
                 </MenuItem>
 
                 <MenuItem className={styles.header__wrapper__nav__linkBtn} onMouseEnter={ShowMenu} onMouseLeave={HideMenu} > {/*li*/}
-                    <NavLink to='/instructions'>Инструкции</NavLink>
-
+                    <NavLink to='/instructions'>СТАНДАРТЫ</NavLink>
                     <SubMenuList
                         id='hiddenMenu'
+                        className={styles.header__wrapper__nav__linkBtn_hiddenMenuArrow}
                         onClick={HideMenu}>
 
                         <NavLink to='/museum'>
@@ -156,11 +116,48 @@ const Header = () => {
                             </SubItems>
                         </NavLink>
                     </SubMenuList>
-
                 </MenuItem>
 
                 <MenuItem className={styles.header__wrapper__nav__linkBtn}> {/*li*/}
-                    <NavLink to='/greeting'>Приветствие</NavLink>
+                    <NavLink to='/reports'>Отчеты</NavLink>
+                    <SubMenuList className={styles.header__wrapper__nav__linkBtn_hiddenMenuArrow}> {/*ul*/}
+                        <a href="https://docs.google.com">
+                            <SubItems>Контрольно-обходной лист</SubItems>
+                        </a>
+
+                        <a href="https://docs.google.com">
+                            <SubItems>Опрос иностранцев</SubItems>
+                        </a>
+
+                        <a href="https://docs.google.com">
+                            <SubItems>Отчет по продажам в кассе</SubItems>
+                        </a>
+
+                        <a href="https://docs.google.com">
+                            <SubItems>Бланки Navision</SubItems>
+                        </a>
+
+                        <a href="https://docs.google.com">
+                            <SubItems>Ошибки Booking</SubItems>
+                        </a>
+
+                        <a href="https://docs.google.com">
+                            <SubItems>Оптовое приобретение входных билетов</SubItems>
+                        </a>
+
+                        <a href="https://docs.google.com">
+                            <SubItems>Билеты viator/get your guide</SubItems>
+                        </a>
+
+                        <a href="https://docs.google.com">
+                            <SubItems>Гостевые билеты</SubItems>
+                        </a>
+
+                    </SubMenuList>
+                </MenuItem>
+
+                <MenuItem className={styles.header__wrapper__nav__linkBtn}> {/*li*/}
+                    <a href="https://docs.google.com">Сотрудники</a>
                 </MenuItem>
 
             </MenuList>

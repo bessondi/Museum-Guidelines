@@ -1,6 +1,9 @@
 import React, {Component} from 'react';
-import ScrollbarTop from "../../header/scrollbar/scrollbarTop";
 import ScrollToTop from "../scrollToTopBtn/scrollToTopBtn";
+// import ScrollbarTop from "../../header/scrollbar/scrollbarTop";
+// import TextGradient from '../stickyTextGradient';
+
+// import styles from '../instructionsMainStyles.module.css';
 
 
 class Volunteers extends Component {
@@ -12,7 +15,7 @@ class Volunteers extends Component {
     render() {
 
         const VolunteersSection = () => {
-            return(
+            return (
                 <React.Fragment>
                     <div className="anchor">
                         <div id="volunteers"/>
@@ -32,9 +35,10 @@ class Volunteers extends Component {
                             обеда, чтобы все не ушли на него одновременно. Инструкция по работе с волонтерами имеется на
                             столе в волонтерской комнате. Все необходимые бланки и бейджи тоже.</p>
                         <p>Волонтеры проводят опрос посетителей с помощью планшета, который хранится и заряжается в
-                            кассовой
-                            зоне. Выдача планшета для работы осуществляется под роспись на специальном бланке (документ
-                            “Учет выдачи планшета волонтерам” на гугл-диске в папке “Касса”, подпапка “На печать”).</p>
+                            кассовой зоне. Выдача планшета для работы осуществляется под роспись на специальном бланке
+                            (документ <a
+                                href="https://docs.google.com/">Учет
+                                выдачи планшета волонтерам</a> на гугл-диске в папке “Касса”, подпапка “На печать”).</p>
                     </div>
                 </React.Fragment>
             )
@@ -42,9 +46,10 @@ class Volunteers extends Component {
 
         return (
             <React.Fragment>
-                <ScrollbarTop show='show'/>
+                {/* <ScrollbarTop show='show'/> */}
                 <VolunteersSection/>
                 <ScrollToTop/>
+                {/* <TextGradient/> */}
             </React.Fragment>
         );
     }

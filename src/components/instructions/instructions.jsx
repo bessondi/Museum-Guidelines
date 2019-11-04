@@ -14,7 +14,7 @@ class Instructions extends Component {
         return (
             <div className={styles.main__instructions__wrapper}>
 
-                <h1>Инструкции</h1>
+                <h1>Стандарты</h1>
                 <div className={styles.main__instructions__wrapper__section}>
                     <ul className={styles.main__instructions__wrapper__section__links}>
                         <li>

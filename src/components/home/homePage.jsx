@@ -42,7 +42,11 @@ class HomePage extends Component {
                 <React.Fragment>
                         <StripesImg className={`${styles.main__homePage__wrapper__greetingImg} ${styles.main__homePage__wrapper__greetingImg_stripesAnim}`}/>
                         <EveImg className={`${styles.main__homePage__wrapper__greetingImg} ${styles.main__homePage__wrapper__greetingImg_eveAnim}`}/>
-                    <h1>Гайдлайны Музея Фаберже</h1>
+                    {/*<h1 className={styles.main__homePage__wrapper__mainMuseumTitle}>*/}
+                        {/*Музей <br/> */}
+                        {/*<b>Фаберже</b>*/}
+                    {/*</h1>*/}
+                    <h2 className={styles.main__homePage__wrapper__mainTitle}>Гайдлайны Музея Фаберже</h2>
                 </React.Fragment>
             )
         };
@@ -57,11 +61,21 @@ class HomePage extends Component {
             )
         };
 
+        const Staff = () => {
+            return (
+                <a href="https://docs.google.com/spreadsheets/d/1VCYNuaQw46uw_FjrizkYEfa61JVTwBDb5eqZLo74wQA/edit?usp=drivesdk">
+                    <button className={styles.main__homePage__wrapper__linkBtn}>
+                        СОТРУДНИКИ
+                    </button>
+                </a>
+            )
+        };
+
         const Instructions = () => {
             return (
                 <NavLink to='/instructions'>
                     <button className={styles.main__homePage__wrapper__linkBtn}>
-                        ИНСТРУКЦИИ
+                        СТАНДАРТЫ
                     </button>
                 </NavLink>
             )
@@ -80,9 +94,10 @@ class HomePage extends Component {
         return (
             <div className={styles.main__homePage__wrapper}>
                 <Title/>
-                <p>Здесь вы сможете найти ответы на самые часто задаваемые вопросы и заполнить отчеты.</p>
+                <p className={styles.main__homePage__description}>Здесь вы сможете найти ответы на самые часто задаваемые вопросы и заполнить отчеты.</p>
                 <div className={styles.main__homePage__wrapper_columns}>
                     <Greeting/>
+                    <Staff/>
                     <Instructions/>
                     <Reports/>
                 </div>

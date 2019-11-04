@@ -5,6 +5,7 @@ import styles from '../instructionsMainStyles.module.css';
 import ScrollbarTop from "../../header/scrollbar/scrollbarTop";
 import Scrollspy from "react-scrollspy";
 import ScrollToTop from "../scrollToTopBtn/scrollToTopBtn";
+import TextGradient from '../stickyTextGradient';
 
 
 class Standards extends Component {
@@ -171,7 +172,7 @@ class Standards extends Component {
                                 Как должен выглядеть сотрудник Музея перед посетителем? (модель поведения и внешний вид)
                             </p>
                         </div>
-                        <p>Основные установки:</p>
+                        <p>Нам следует всегда помнить:</p>
                         <ul>
                             <li> Имидж и репутация Музея зависит от впечатления, которое сотрудники произвели на
                                 посетителя.
@@ -183,6 +184,9 @@ class Standards extends Component {
                             <li> За дверьми входа в Музей остается лишнее.
                             </li>
                             <li> Посетитель не виноват, что он 1000-ый.
+                            </li>
+                            <li>Мы сами создаем свою лучшую рабочую команду и заботимся об атмосфере в коллективе,
+                                благодаря которой мы проводим рабочее время в комфортной обстановке и заряжаемся силами.
                             </li>
                         </ul>
 
@@ -283,8 +287,7 @@ class Standards extends Component {
                                             </li>
                                             <li> празднование дней рождений сотрудников
                                             </li>
-                                            <li> наличие “Книги корпоративной культуры” с интересными отзывами,
-                                                фиксацией
+                                            <li> наличие “Дневника Музея” с интересными отзывами, фиксацией
                                                 произошедших событий в жизни Музея
                                             </li>
                                             <li> партнерские экскурсии в другие музеи / учреждения
@@ -666,7 +669,7 @@ class Standards extends Component {
                         <Ethics/>
                         <Appearance/>
                     </div>
-
+                    <TextGradient/>
                     <ScrollToTop/>
                 </React.Fragment>
             )

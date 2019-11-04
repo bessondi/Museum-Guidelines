@@ -1,11 +1,13 @@
 {
-  "name": "faberge-guides",
+  "name": "faberge-guidelines",
+  "author": "Dmitry Bessonov",
+  "e-mail": "dmitrybessonov@icloud.com",
   "version": "0.1.0",
-  "homepage": "https://bessondi.github.io/Museum-Guidelines/",
   "private": true,
+  "homepage": "https://bessondi.github.io/Museum-Guidelines/",
   "dependencies": {
-    "react": "^16.8.6",
-    "react-dom": "^16.8.6",
+    "react": "^16.9.0",
+    "react-dom": "^16.9.0",
     "react-scripts": "3.0.1"
   },
   "scripts": {
@@ -36,7 +38,7 @@
     "react-lazy-load": "^3.0.13",
     "react-router": "^5.0.1",
     "react-router-dom": "^5.0.1",
-    "react-router-hash-link": "^1.2.1",
+    "react-router-hash-link": "^1.2.2",
     "react-scroll-up-button": "^1.6.4",
     "react-scrollspy": "^3.4.0",
     "styled-components": "^4.3.2"

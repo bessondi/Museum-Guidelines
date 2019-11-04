@@ -1,8 +1,12 @@
-import React, {Component} from 'react';
-import {NavLink} from "react-router-dom";
+import React, { Component } from 'react';
+import { NavLink } from "react-router-dom";
 
 import sideBarStyles from './sideBar.module.css';
 import styles from '../headerStyles.module.css';
+
+import logo from '../../../media/fabergeLogo3.svg';
+import plusIcon from '../../../media/icons/plusIconWhite.svg';
+import styled from "styled-components";
 
 
 class NavigationMenu extends Component {
@@ -18,6 +22,9 @@ class NavigationMenu extends Component {
     toggleMenuClass = () => {
         let currentState = this.state.activeMenu;
         this.setState({ activeMenu: !currentState });
+
+        this.setState({ activeInstructions: false });
+        this.setState({ activeReports: false });
     };
     toggleInstructionsClass = () => {
         let currentState = this.state.activeInstructions;
@@ -30,122 +37,157 @@ class NavigationMenu extends Component {
 
     render() {
 
+        const Logo = styled.div`
+            background-image: url(${logo});
+            background-position: center;
+            background-repeat: no-repeat;
+            width: 100px;
+            height: 100px;
+            margin: 25px auto 75px;
+        `;
+
+        const PlusIcon = styled.div`
+            display: inline-block;
+            background: url(${plusIcon});
+            width: 18px;
+            height: 18px;
+            margin: 4px 0 0 15px;
+        `;
+
         return (
             <React.Fragment>
 
-                <button className={ this.state.activeMenu
+                <button className={this.state.activeMenu
                     ? `${styles.closeEmptyFieldActive}`
-                    : `${styles.closeEmptyField}` }
-                     onClick={ this.toggleMenuClass } >
+                    : `${styles.closeEmptyField}`}
+                    onClick={this.toggleMenuClass}
+                >
                 </button>
 
                 <div className={styles.header__wrapper__navBtn}>
-                    <button className={ this.state.activeMenu
+                    <button className={this.state.activeMenu
                         ? `${sideBarStyles.menuBtn} ${sideBarStyles.menuBtnActive}`
-                        : `${sideBarStyles.menuBtn}` }
-                            onClick={ this.toggleMenuClass } >
-                        <span/>
+                        : `${sideBarStyles.menuBtn}`}
+                        onClick={this.toggleMenuClass} >
+                        <span />
                     </button>
                 </div>
 
 
                 <div
-                    className={ this.state.activeMenu
-                    ? `${styles.wrapperActive}`
-                    : `${styles.wrapper}` }
+                    className={this.state.activeMenu
+                        ? `${styles.wrapperActive} DarkMode`
+                        : `${styles.wrapper}`}
                 >
-
-                    <ul className={ this.state.activeMenu
-                            ? `${styles.listItemsActive}`
-                            : `${styles.listItems}` }
+                    <ul className={this.state.activeMenu
+                        ? `${styles.listItemsActive}`
+                        : `${styles.listItems}`}
                     >
-                        <li><NavLink to='/greeting' onClick={ this.toggleMenuClass }>ПРИВЕТСТВИЕ</NavLink></li>
+                        <li><NavLink to='/greeting' onClick={this.toggleMenuClass}>ПРИВЕТСТВИЕ</NavLink></li>
 
-                        <li onClick={ this.toggleInstructionsClass }>ИНСТРУКЦИИ</li>
+                        <li><a href="https://docs.google.com">СОТРУДНИКИ</a></li>
+
+                        <li onClick={this.toggleInstructionsClass} >
+                            СТАНДАРТЫ
+                            <PlusIcon className={this.state.activeInstructions
+                                ? `${styles.list_opened}`
+                                : `${styles.list_closed}`}
+                            />
+                        </li>
                         <li
-                            className={ this.state.activeInstructions
-                            ? `${styles.listItems_InstructionsSubListToggle_active}`
-                            : `${styles.listItems_InstructionsSubListToggle}` }
+                            className={this.state.activeInstructions
+                                ? `${styles.listItems_InstructionsSubListToggle_active}`
+                                : `${styles.listItems_InstructionsSubListToggle}`}
                         >
-                            <ul
-                                className={ this.state.activeMenu
-                                ? `${styles.subListItemsActive}`
-                                : `${styles.listItems}`}
+                            <ul onClick={this.toggleReportsClass}
+                                className={this.state.activeMenu
+                                    ? `${styles.subListItemsActive}`
+                                    : `${styles.listItems}`}
                             >
-                                <li onClick={ this.toggleInstructionsClass }>
-                                    <NavLink to='/museum' onClick={ this.toggleMenuClass }>Знакомство с Музеем</NavLink>
+                                <li onClick={this.toggleInstructionsClass}>
+                                    <NavLink to='/museum' onClick={this.toggleMenuClass}>Знакомство с Музеем</NavLink>
                                 </li>
-                                <li onClick={ this.toggleInstructionsClass }>
-                                    <NavLink to='/work-order' onClick={ this.toggleMenuClass }>Рабочий распорядок</NavLink>
+                                <li onClick={this.toggleInstructionsClass}>
+                                    <NavLink to='/work-order' onClick={this.toggleMenuClass}>Рабочий распорядок</NavLink>
                                 </li>
-                                <li onClick={ this.toggleInstructionsClass }>
-                                    <NavLink to='/standards' onClick={ this.toggleMenuClass }>Стандарты обслуживания</NavLink>
+                                <li onClick={this.toggleInstructionsClass}>
+                                    <NavLink to='/standards' onClick={this.toggleMenuClass}>Стандарты обслуживания</NavLink>
                                 </li>
-                                <li onClick={ this.toggleInstructionsClass }>
-                                    <NavLink to='/structure' onClick={ this.toggleMenuClass }>Структура музея и руководство</NavLink>
+                                <li onClick={this.toggleInstructionsClass}>
+                                    <NavLink to='/structure' onClick={this.toggleMenuClass}>Структура музея и руководство</NavLink>
                                 </li>
-                                <li onClick={ this.toggleInstructionsClass }>
-                                    <NavLink to='/situations' onClick={ this.toggleMenuClass }>Нестандартные ситуации</NavLink>
+                                <li onClick={this.toggleInstructionsClass}>
+                                    <NavLink to='/situations' onClick={this.toggleMenuClass}>Нестандартные ситуации</NavLink>
                                 </li>
-                                <li onClick={ this.toggleInstructionsClass }>
-                                    <NavLink to='/volunteers' onClick={ this.toggleMenuClass }>Волонтерская служба</NavLink>
+                                <li onClick={this.toggleInstructionsClass}>
+                                    <NavLink to='/volunteers' onClick={this.toggleMenuClass}>Волонтерская служба</NavLink>
                                 </li>
                             </ul>
                         </li>
 
-                        <li onClick={ this.toggleReportsClass }>ОТЧЕТЫ</li>
+                        <li onClick={this.toggleReportsClass} >
+                            ОТЧЕТЫ
+                            <PlusIcon className={this.state.activeReports
+                                ? `${styles.list_opened}`
+                                : `${styles.list_closed}`}
+                            />
+                        </li>
                         <li
-                            className={ this.state.activeReports
+                            className={this.state.activeReports
                                 ? `${styles.listItems_ReportsSubListToggle_active}`
-                                : `${styles.listItems_ReportsSubListToggle}` }
+                                : `${styles.listItems_ReportsSubListToggle}`}
                         >
-                            <ul
-                                className={ this.state.activeMenu
+                            <ul onClick={this.toggleInstructionsClass}
+                                className={this.state.activeMenu
                                     ? `${styles.subListItemsActive} ${styles.subListItemsActive_cashBox}`
                                     : `${styles.listItems}`}
                             >
-                                <li onClick={ this.toggleReportsClass }>
-                                    <a href="https://docs.google.com/">
+                                <li onClick={this.toggleReportsClass}>
+                                    <a href="https://docs.google.com">
                                         Контрольно-обходной лист
                                     </a>
                                 </li>
-                                <li onClick={ this.toggleReportsClass }>
+                                <li onClick={this.toggleReportsClass}>
                                     <a href="https://forms.gle/">
                                         Отчет по аудиогидам
                                     </a>
                                 </li>
-                                <li onClick={ this.toggleReportsClass }>
+                                <li onClick={this.toggleReportsClass}>
                                     <a href="https://forms.gle/">
                                         Отчет по радиогидам
                                     </a>
                                 </li>
-
-                                <li onClick={ this.toggleReportsClass }>
+                                <li onClick={this.toggleReportsClass}>
+                                    <a href="https://docs.google.com/">
+                                        Опрос иностранцев
+                                    </a>
+                                </li>
+                                <li onClick={this.toggleReportsClass}>
                                     <a href="https://docs.google.com/">
                                         Отчет по продажам в кассе
                                     </a>
                                 </li>
-                                <li onClick={ this.toggleReportsClass }>
+                                <li onClick={this.toggleReportsClass}>
                                     <a href="https://docs.google.com/">
                                         Бланки Navision
                                     </a>
                                 </li>
-                                <li onClick={ this.toggleReportsClass }>
+                                <li onClick={this.toggleReportsClass}>
                                     <a href="https://docs.google.com/">
                                         Ошибки Booking
                                     </a>
                                 </li>
-                                <li onClick={ this.toggleReportsClass }>
+                                <li onClick={this.toggleReportsClass}>
                                     <a href="https://docs.google.com/">
                                         Оптовое приобретение входных билетов
                                     </a>
                                 </li>
-                                <li onClick={ this.toggleReportsClass }>
+                                <li onClick={this.toggleReportsClass}>
                                     <a href="https://docs.google.com/">
-                                        Продажа веб-билетов viator/get your guide
+                                        Билеты viator/get your guide
                                     </a>
                                 </li>
-                                <li onClick={ this.toggleReportsClass }>
+                                <li onClick={this.toggleReportsClass}>
                                     <a href="https://docs.google.com/">
                                         Гостевые билеты
                                     </a>
@@ -153,8 +195,9 @@ class NavigationMenu extends Component {
                             </ul>
                         </li>
 
+                        <li><Logo className={styles.sideBarLogo} /></li>
                     </ul>
-                    <div/>
+                    <div />
                 </div>
             </React.Fragment>
         )

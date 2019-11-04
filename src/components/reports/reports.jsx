@@ -3,7 +3,8 @@ import styled from 'styled-components';
 
 import styles from './reportsStyles.module.css';
 
-import arrow from '../../media/icons/arrow-down.svg';
+// import arrow from '../../media/icons/arrow-down.svg';
+import plusIcon from '../../media/icons/plusIcon.svg';
 
 
 class Reports extends Component {
@@ -15,32 +16,32 @@ class Reports extends Component {
                 {
                     id: 1,
                     name: 'Отчет по продажам в кассе',
-                    link: 'https://docs.google.com/'
+                    link: 'https://docs.google.com'
                 },
                 {
                     id: 2,
                     name: 'Бланки Navision',
-                    link: 'https://docs.google.com/'
+                    link: 'https://docs.google.com'
                 },
                 {
                     id: 3,
                     name: 'Ошибки Booking',
-                    link: 'https://docs.google.com/'
+                    link: 'https://docs.google.com'
                 },
                 {
                     id: 4,
                     name: 'Оптовое приобретение входных билетов',
-                    link: 'https://docs.google.com/'
+                    link: 'https://docs.google.com'
                 },
                 {
                     id: 5,
-                    name: 'Продажа веб-билетов viator/get your guide',
-                    link: 'https://docs.google.com/'
+                    name: 'Билеты viator/get your guide',
+                    link: 'https://docs.google.com'
                 },
                 {
                     id: 6,
                     name: 'Гостевые билеты',
-                    link: 'https://docs.google.com/'
+                    link: 'https://docs.google.com'
                 }
             ]
         };
@@ -53,7 +54,7 @@ class Reports extends Component {
     componentDidUpdate() {
         let currentState = this.state.active;
         if(currentState) {
-            window.scrollTo(0, 350)
+            window.scrollTo(0, 450)
         } else {
             window.scrollTo(0, 0)
         }
@@ -66,12 +67,19 @@ class Reports extends Component {
 
 
     render() {
-        const Arrow = styled.div`
-        background: url(${arrow});
-        width: 20px;
-        height: 20px;
-        margin: 8px 0 0 10px;
-    `;
+        // const Arrow = styled.div`
+        //     background: url(${arrow});
+        //     width: 20px;
+        //     height: 20px;
+        //     margin: 8px 0 0 10px;
+        // `;
+
+        const PlusIcon = styled.div`
+            background: url(${plusIcon});
+            width: 18px;
+            height: 18px;
+            margin: 8px 0 0 10px;
+        `;
 
         let reportItems = this.state.reportItems.map((item) => (
             <li key={item.id} >
@@ -94,7 +102,7 @@ class Reports extends Component {
 
                         <li>
                             <h3>
-                                <a href="https://docs.google.com/"
+                                <a href="https://docs.google.com"
                                    className={styles.wrapper__seniorWorkerReports__list_links}>
                                     Контрольно-обходной лист
                                 </a>
@@ -103,7 +111,7 @@ class Reports extends Component {
 
                         <li>
                             <h3>
-                                <a href="https://docs.google.com/"
+                                <a href="https://forms.gle/"
                                    className={styles.wrapper__seniorWorkerReports__list_links}>
                                     Отчет по аудиогидам
                                 </a>
@@ -112,9 +120,17 @@ class Reports extends Component {
 
                         <li>
                             <h3>
-                                <a href="https://docs.google.com/"
+                                <a href="https://forms.gle/"
                                    className={styles.wrapper__seniorWorkerReports__list_links}>
                                     Отчет по радиогидам
+                                </a>
+                            </h3>
+                        </li>
+                        <li>
+                            <h3>
+                                <a href="https://docs.google.com/"
+                                   className={styles.wrapper__seniorWorkerReports__list_links}>
+                                    Опрос иностранцев
                                 </a>
                             </h3>
                         </li>
@@ -129,7 +145,7 @@ class Reports extends Component {
                             >
                                 Кассовые отчеты
                             </h3>
-                            <Arrow className={this.state.active
+                            <PlusIcon className={this.state.active
                                 ? `${styles.wrapper__seniorWorkerReports__list_arrowUp}`
                                 : `${styles.wrapper__seniorWorkerReports__list_arrowDown}`}/>
                         </li>

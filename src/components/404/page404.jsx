@@ -3,6 +3,7 @@ import {HashLink as Link} from 'react-router-hash-link';
 import styled from 'styled-components';
 
 import styles from './page404styles.module.css';
+import travolta from '../../media/travolta.gif';
 import image404 from '../../media/404.svg';
 
 
@@ -32,6 +33,12 @@ class Page404 extends Component {
             max-width: 700px;
             text-decoration: none;
         `;
+        const LostTravolta = styled.div`
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: -60px;
+        `;
 
         return (
             <Wrapper>
@@ -44,6 +51,9 @@ class Page404 extends Component {
                     или заполнить еще <Link to='/reports'> <strong> пару отчетов</strong></Link>.
                 </Text404>
 
+                <LostTravolta className={styles.travolta}>
+                    <img src={travolta} alt="Oops!" style={{height: 300}}/>
+                </LostTravolta>
             </Wrapper>
         )
     }

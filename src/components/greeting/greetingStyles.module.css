@@ -4,11 +4,11 @@
 }
 
 .greeting__wrapper__teamImg {
-    max-width: 100%;
+    max-width: 50%;
     background-size: auto;
     display: block;
     margin: 0 auto;
-    border-radius: 5px;
+    border-radius: 50%;
 }
 
 .greeting__wrapper img {
