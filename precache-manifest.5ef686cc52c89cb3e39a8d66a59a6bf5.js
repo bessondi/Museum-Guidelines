@@ -1,23 +1,35 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "a4507c86045b8cad92597608411fd1a3",
+    "revision": "1d16530cd9b7dce3342143fd5fcd923d",
     "url": "/Museum-Guidelines/index.html"
   },
   {
-    "revision": "9fb3b1b4f7eebd7ee6fe",
-    "url": "/Museum-Guidelines/static/css/main.0e3cd7a3.chunk.css"
+    "revision": "3c095dfe783d4622140b",
+    "url": "/Museum-Guidelines/static/css/2.257cdccd.chunk.css"
   },
   {
-    "revision": "db14457ec85e55987a18",
-    "url": "/Museum-Guidelines/static/js/2.e1e5e9cf.chunk.js"
+    "revision": "8bd17e8e31b9b0f66d00",
+    "url": "/Museum-Guidelines/static/css/main.f5de2995.chunk.css"
   },
   {
-    "revision": "9fb3b1b4f7eebd7ee6fe",
-    "url": "/Museum-Guidelines/static/js/main.a39e88fa.chunk.js"
+    "revision": "3c095dfe783d4622140b",
+    "url": "/Museum-Guidelines/static/js/2.38e4a735.chunk.js"
   },
   {
-    "revision": "173345254118a2e11c3f",
-    "url": "/Museum-Guidelines/static/js/runtime~main.17e7a2ee.js"
+    "revision": "795b5a2c8900fc4e44bc",
+    "url": "/Museum-Guidelines/static/js/3.d0d1ef1b.chunk.js"
+  },
+  {
+    "revision": "7e979dd8e2e46bd93c09",
+    "url": "/Museum-Guidelines/static/js/4.56d58144.chunk.js"
+  },
+  {
+    "revision": "8bd17e8e31b9b0f66d00",
+    "url": "/Museum-Guidelines/static/js/main.8220f0b6.chunk.js"
+  },
+  {
+    "revision": "122df9409d836571fe35",
+    "url": "/Museum-Guidelines/static/js/runtime~main.1b804127.js"
   },
   {
     "revision": "0b7c3d0fe2789dbcc2476b647e69ed13",
@@ -60,6 +72,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/Museum-Guidelines/static/media/Munt.a958dd9e.jpeg"
   },
   {
+    "revision": "f72a6a3458ec3a7e39d800134ea869a5",
+    "url": "/Museum-Guidelines/static/media/PFAgoraSansPro-Medium.f72a6a34.ttf"
+  },
+  {
     "revision": "2e207889bff4428e8f92cc7d6e96900a",
     "url": "/Museum-Guidelines/static/media/Scurlov.2e207889.jpg"
   },
@@ -80,8 +96,12 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/Museum-Guidelines/static/media/Ulander.14e5b918.jpeg"
   },
   {
-    "revision": "63fbbcb927dde743528bf8fd37dd308a",
-    "url": "/Museum-Guidelines/static/media/arrow-down.63fbbcb9.svg"
+    "revision": "677bd80fb8240b9838113d811fe663e9",
+    "url": "/Museum-Guidelines/static/media/audioGuide.677bd80f.jpg"
+  },
+  {
+    "revision": "7410b998ff9a9a3f93e7ef895aaedd3d",
+    "url": "/Museum-Guidelines/static/media/badge.7410b998.jpg"
   },
   {
     "revision": "887382bc39cb1ab315bbc94a132f6c99",
@@ -92,6 +112,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/Museum-Guidelines/static/media/cafe.285fe0d3.jpeg"
   },
   {
+    "revision": "fe8ce4d1cf041e15dbd3d267a04047c5",
+    "url": "/Museum-Guidelines/static/media/cleaning.fe8ce4d1.jpg"
+  },
+  {
     "revision": "b09f156437572b24d19ec13a5cd7a1ba",
     "url": "/Museum-Guidelines/static/media/fabergeLogo.b09f1564.svg"
   },
@@ -100,16 +124,28 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/Museum-Guidelines/static/media/fabergeLogo2.1c286f3b.svg"
   },
   {
+    "revision": "31273b354bbf192d66eb7a039546b070",
+    "url": "/Museum-Guidelines/static/media/fabergeLogo3.31273b35.svg"
+  },
+  {
     "revision": "04445a76a433b1cfa4fc4035340ffd99",
     "url": "/Museum-Guidelines/static/media/facebook-logo.04445a76.svg"
+  },
+  {
+    "revision": "b3900eb815ff28113e427d2b30a7bb67",
+    "url": "/Museum-Guidelines/static/media/iPod-scanner.b3900eb8.jpg"
+  },
+  {
+    "revision": "4e77be263f45cfea80c0e25319780ae0",
+    "url": "/Museum-Guidelines/static/media/iPod.4e77be26.jpg"
   },
   {
     "revision": "8b681c5eb9a570923e06d8d76116277a",
     "url": "/Museum-Guidelines/static/media/instagram.8b681c5e.svg"
   },
   {
-    "revision": "f278545da5b57b070c023a8385397300",
-    "url": "/Museum-Guidelines/static/media/kombat.f278545d.jpeg"
+    "revision": "9e83437214c87dfdf3cc9c0e59b11a1e",
+    "url": "/Museum-Guidelines/static/media/kombat.9e834372.jpeg"
   },
   {
     "revision": "b0aa36d00d135590ef446abd28b82108",
@@ -124,12 +160,40 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/Museum-Guidelines/static/media/map2.e24e68e7.png"
   },
   {
-    "revision": "77eab7dae53c287dd5c0a6e5f561762b",
-    "url": "/Museum-Guidelines/static/media/soundcloud-logo.77eab7da.svg"
+    "revision": "260b27cf10adb174ccb48c1140b09a30",
+    "url": "/Museum-Guidelines/static/media/open-book.260b27cf.svg"
   },
   {
-    "revision": "4aed88679e4327aa1278236681456c9b",
-    "url": "/Museum-Guidelines/static/media/team.4aed8867.jpeg"
+    "revision": "242fc1dc4740c710c6613c5a6c63a90c",
+    "url": "/Museum-Guidelines/static/media/plusIcon.242fc1dc.svg"
+  },
+  {
+    "revision": "48202ad7d83195a1087c7b5066da4980",
+    "url": "/Museum-Guidelines/static/media/plusIconWhite.48202ad7.svg"
+  },
+  {
+    "revision": "5202cd4b8743ed605891cd3ff5c2e400",
+    "url": "/Museum-Guidelines/static/media/radio.5202cd4b.jpg"
+  },
+  {
+    "revision": "fd8b02d42cee778ac4fe8d5e0f4db731",
+    "url": "/Museum-Guidelines/static/media/radioGuide.fd8b02d4.jpg"
+  },
+  {
+    "revision": "27a68df931c805e8cf2f0c493d4fcdab",
+    "url": "/Museum-Guidelines/static/media/samsungTablet.27a68df9.jpg"
+  },
+  {
+    "revision": "251a002bd446c269e19132ee4b5353ef",
+    "url": "/Museum-Guidelines/static/media/scanner.251a002b.jpg"
+  },
+  {
+    "revision": "c0194d7a75bc216463479afe110a0793",
+    "url": "/Museum-Guidelines/static/media/soundcloud-logo.c0194d7a.svg"
+  },
+  {
+    "revision": "2ea66c06db1fe4ed161394e1cf0a84e4",
+    "url": "/Museum-Guidelines/static/media/travolta.2ea66c06.gif"
   },
   {
     "revision": "2bd73473817341249fea394e151602b6",
