@@ -1,3 +1,5 @@
 Faberge Museum Guidelines
-
- <a href='https://bessondi.github.io/Museum-Guidelines/'>Guidelines</a>
+ 
+ [Guidelines](https://bessondi.github.io/Museum-Guidelines/)
+ 
+ ![Preview Image](Preview.png)
