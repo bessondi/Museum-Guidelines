@@ -1,35 +1,35 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "1d16530cd9b7dce3342143fd5fcd923d",
+    "revision": "0118111e6e9b3406c9b050214fa3d732",
     "url": "/Museum-Guidelines/index.html"
   },
   {
-    "revision": "3c095dfe783d4622140b",
-    "url": "/Museum-Guidelines/static/css/2.257cdccd.chunk.css"
+    "revision": "905fbd31e515b21a3d12",
+    "url": "/Museum-Guidelines/static/css/2.0ee02cc7.chunk.css"
   },
   {
-    "revision": "8bd17e8e31b9b0f66d00",
+    "revision": "535abc236be6d8af3d97",
     "url": "/Museum-Guidelines/static/css/main.f5de2995.chunk.css"
   },
   {
-    "revision": "3c095dfe783d4622140b",
-    "url": "/Museum-Guidelines/static/js/2.38e4a735.chunk.js"
+    "revision": "905fbd31e515b21a3d12",
+    "url": "/Museum-Guidelines/static/js/2.c95b6139.chunk.js"
   },
   {
-    "revision": "795b5a2c8900fc4e44bc",
-    "url": "/Museum-Guidelines/static/js/3.d0d1ef1b.chunk.js"
+    "revision": "d65dc444185396ef1d2f",
+    "url": "/Museum-Guidelines/static/js/3.6b40994c.chunk.js"
   },
   {
     "revision": "7e979dd8e2e46bd93c09",
     "url": "/Museum-Guidelines/static/js/4.56d58144.chunk.js"
   },
   {
-    "revision": "8bd17e8e31b9b0f66d00",
-    "url": "/Museum-Guidelines/static/js/main.8220f0b6.chunk.js"
+    "revision": "535abc236be6d8af3d97",
+    "url": "/Museum-Guidelines/static/js/main.cf67b400.chunk.js"
   },
   {
-    "revision": "122df9409d836571fe35",
-    "url": "/Museum-Guidelines/static/js/runtime~main.1b804127.js"
+    "revision": "9f4b956fde21131b9638",
+    "url": "/Museum-Guidelines/static/js/runtime~main.be033210.js"
   },
   {
     "revision": "0b7c3d0fe2789dbcc2476b647e69ed13",
@@ -114,6 +114,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "fe8ce4d1cf041e15dbd3d267a04047c5",
     "url": "/Museum-Guidelines/static/media/cleaning.fe8ce4d1.jpg"
+  },
+  {
+    "revision": "5b1c434fdebd263c281760257c21cc56",
+    "url": "/Museum-Guidelines/static/media/fabergeHalfLogo.5b1c434f.svg"
   },
   {
     "revision": "b09f156437572b24d19ec13a5cd7a1ba",
