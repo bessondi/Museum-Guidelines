@@ -17,5 +17,6 @@
     .main__wrapper {
         display: block;
         margin: 60px 5px auto;
+        max-width: 100%;
     }
 }

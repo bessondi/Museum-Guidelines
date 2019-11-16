@@ -5,6 +5,7 @@ import sideBarStyles from './sideBar.module.css';
 import styles from '../headerStyles.module.css';
 
 import logo from '../../../media/fabergeLogo3.svg';
+import BG_logo from '../../../media/fabergeHalfLogo.svg';
 import plusIcon from '../../../media/icons/plusIconWhite.svg';
 import styled from "styled-components";
 
@@ -44,6 +45,22 @@ class NavigationMenu extends Component {
             width: 100px;
             height: 100px;
             margin: 25px auto 75px;
+        `;
+
+        const Logo2 = styled.div`
+            position: fixed;
+            bottom: -200px;
+            left: -53px;
+            background-image: url(${BG_logo});
+            background-position: center;
+            background-repeat: no-repeat;
+            width: 500px;
+            height: 500px;
+            margin: 25px auto 75px;
+            opacity: .1;
+            pointer-events: none;
+            animation-duration: 3s;
+            animation-name: showLogo;
         `;
 
         const PlusIcon = styled.div`
@@ -196,8 +213,8 @@ class NavigationMenu extends Component {
                         </li>
 
                         <li><Logo className={styles.sideBarLogo} /></li>
+                        <li><Logo2 className={styles.sideBarLogoTablet}/></li>
                     </ul>
-                    <div />
                 </div>
             </React.Fragment>
         )
