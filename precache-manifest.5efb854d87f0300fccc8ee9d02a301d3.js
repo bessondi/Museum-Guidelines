@@ -1,23 +1,23 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "0118111e6e9b3406c9b050214fa3d732",
+    "revision": "946df849837991687c496ff738b14856",
     "url": "/Museum-Guidelines/index.html"
   },
   {
-    "revision": "905fbd31e515b21a3d12",
-    "url": "/Museum-Guidelines/static/css/2.0ee02cc7.chunk.css"
+    "revision": "2348d377095fab6ba12f",
+    "url": "/Museum-Guidelines/static/css/2.563d032c.chunk.css"
   },
   {
     "revision": "535abc236be6d8af3d97",
     "url": "/Museum-Guidelines/static/css/main.f5de2995.chunk.css"
   },
   {
-    "revision": "905fbd31e515b21a3d12",
-    "url": "/Museum-Guidelines/static/js/2.c95b6139.chunk.js"
+    "revision": "2348d377095fab6ba12f",
+    "url": "/Museum-Guidelines/static/js/2.ac994493.chunk.js"
   },
   {
-    "revision": "d65dc444185396ef1d2f",
-    "url": "/Museum-Guidelines/static/js/3.6b40994c.chunk.js"
+    "revision": "e852e4cb0060dc47d1a6",
+    "url": "/Museum-Guidelines/static/js/3.4232a03f.chunk.js"
   },
   {
     "revision": "7e979dd8e2e46bd93c09",
@@ -28,8 +28,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/Museum-Guidelines/static/js/main.cf67b400.chunk.js"
   },
   {
-    "revision": "9f4b956fde21131b9638",
-    "url": "/Museum-Guidelines/static/js/runtime~main.be033210.js"
+    "revision": "95b168cde1b0ca126ba8",
+    "url": "/Museum-Guidelines/static/js/runtime~main.607c59c8.js"
   },
   {
     "revision": "0b7c3d0fe2789dbcc2476b647e69ed13",
