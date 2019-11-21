@@ -10,8 +10,8 @@ export default class ScrollToTop extends React.Component {
                     height: 35, 
                     fill: 'rgb(48, 114, 196)',
                     border: '2px solid rgb(48, 114, 196)',
-                    bottom: 35,
-                    right: 20,
+                    bottom: 32,
+                    right: 32,
                     outline: 'none',
                     backgroundColor: '#fff'
                     }}/>

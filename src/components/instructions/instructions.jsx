@@ -18,7 +18,7 @@ class Instructions extends Component {
                 <div className={styles.main__instructions__wrapper__section}>
                     <ul className={styles.main__instructions__wrapper__section__links}>
                         <li>
-                            <h3><NavLink to='/museum'>Знакомство с музеем</NavLink></h3>
+                            <h3><NavLink to='/museum'>Знакомство с Музеем</NavLink></h3>
                         </li>
                         <li>
                             <h3><NavLink to='/work-order'>Рабочий распорядок</NavLink></h3>
