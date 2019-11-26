@@ -12,6 +12,8 @@ import styles from '../instructionsMainStyles.module.css';
 import ScrollbarTop from "../../header/scrollbar/scrollbarTop";
 import ScrollToTop from "../scrollToTopBtn/scrollToTopBtn";
 import TextGradient from '../stickyTextGradient';
+import BreadCrumbs from '../../main/breadCrumbs';
+import ArticlesSlider from '../../main/articlesSliderBottom';
 
 
 class Museum extends Component {
@@ -21,14 +23,6 @@ class Museum extends Component {
     }
 
     render() {
-
-        // const Intro = () => {
-        //     return (
-        //         <React.Fragment>
-        //
-        //         </React.Fragment>
-        //     )
-        // };
 
         const Schedule = () => {
             return (
@@ -554,6 +548,11 @@ class Museum extends Component {
                 <React.Fragment>
                     <ScrollbarTop show='show'/>
 
+                    <BreadCrumbs
+                        firstLevelLink='instructions' firstLevelDescription='Стандарты'
+                        secondLevelDescription='Знакомство с Музеем Фаберже'
+                    />
+
                     <div className={styles.wrapper__asidePageNav_hidden}>
                         <AsideMenu/>
                     </div>
@@ -571,6 +570,10 @@ class Museum extends Component {
                     </div>
                     <TextGradient/>
                     <ScrollToTop/>
+
+                    <ArticlesSlider noneSeparator='noneSeparator'
+                        nextArticle='work-order' nextArticleDescription='Рабочий распорядок'
+                    />
                 </React.Fragment>
             )
         };

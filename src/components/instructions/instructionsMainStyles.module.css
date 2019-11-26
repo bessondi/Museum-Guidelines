@@ -348,7 +348,7 @@ thead th:nth-child(5) {
         display: flex;
         position: fixed;
         left: 5%;
-        top: 100px;
+        top: 90px;
         max-width: 200px;
     }
 

@@ -1,7 +1,10 @@
 import React, {Component} from 'react';
 import ScrollToTop from "../scrollToTopBtn/scrollToTopBtn";
-// import ScrollbarTop from "../../header/scrollbar/scrollbarTop";
-// import TextGradient from '../stickyTextGradient';
+import BreadCrumbs from '../../main/breadCrumbs';
+import ArticlesSlider from '../../main/articlesSliderBottom';
+
+import ScrollbarTop from "../../header/scrollbar/scrollbarTop";
+import TextGradient from '../stickyTextGradient';
 
 // import styles from '../instructionsMainStyles.module.css';
 
@@ -46,10 +49,20 @@ class Volunteers extends Component {
 
         return (
             <React.Fragment>
-                {/* <ScrollbarTop show='show'/> */}
+                 <ScrollbarTop show='show'/>
+
+                <BreadCrumbs
+                    firstLevelLink='instructions' firstLevelDescription='Стандарты'
+                    secondLevelDescription='Волонтерская служба'
+                />
+
                 <VolunteersSection/>
+                <TextGradient/>
                 <ScrollToTop/>
-                {/* <TextGradient/> */}
+
+                <ArticlesSlider noneSeparator='noneSeparator'
+                                prevArticle='situations' prevArticleDescription='Нестандартные ситуации'
+                />
             </React.Fragment>
         );
     }

@@ -6,7 +6,8 @@ import Scrollspy from "react-scrollspy";
 import {HashLink as Link} from "react-router-hash-link";
 import ScrollToTop from "../scrollToTopBtn/scrollToTopBtn";
 import TextGradient from '../stickyTextGradient';
-
+import BreadCrumbs from '../../main/breadCrumbs';
+import ArticlesSlider from '../../main/articlesSliderBottom';
 
 class Situations extends Component {
 
@@ -339,6 +340,11 @@ class Situations extends Component {
                 <React.Fragment>
                     <ScrollbarTop show='show'/>
 
+                    <BreadCrumbs
+                        firstLevelLink='instructions' firstLevelDescription='Стандарты'
+                        secondLevelDescription='Нестандартные ситуации'
+                    />
+
                     <div className={`${styles.wrapper__asidePageNav_hidden}`}>
                         <AsideMenu/>
                     </div>
@@ -358,6 +364,11 @@ class Situations extends Component {
                     </div>
                     <TextGradient/>
                     <ScrollToTop/>
+
+                    <ArticlesSlider
+                        prevArticle='structure' prevArticleDescription='Структура Музея'
+                        nextArticle='volunteers' nextArticleDescription='Волонтерская служба'
+                    />
                 </React.Fragment>
             )
         };

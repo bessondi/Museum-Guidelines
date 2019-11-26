@@ -17,7 +17,7 @@ const StickyTextGradient = styled.div`
 const TextGradient = () => {
     return(
         <StickyTextGradient 
-        className='DarkModeTextGradient' 
+        // className='DarkModeTextGradient'
         />
     )
 };

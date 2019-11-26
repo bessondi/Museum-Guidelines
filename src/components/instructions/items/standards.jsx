@@ -6,7 +6,8 @@ import ScrollbarTop from "../../header/scrollbar/scrollbarTop";
 import Scrollspy from "react-scrollspy";
 import ScrollToTop from "../scrollToTopBtn/scrollToTopBtn";
 import TextGradient from '../stickyTextGradient';
-
+import BreadCrumbs from '../../main/breadCrumbs';
+import ArticlesSlider from '../../main/articlesSliderBottom';
 
 class Standards extends Component {
 
@@ -657,6 +658,11 @@ class Standards extends Component {
                 <React.Fragment>
                     <ScrollbarTop show='show'/>
 
+                    <BreadCrumbs
+                        firstLevelLink='instructions' firstLevelDescription='Стандарты'
+                        secondLevelDescription='Стандарты обслуживания'
+                    />
+
                     <div className={`${styles.wrapper__asidePageNav_hidden}`}>
                         <AsideMenu/>
                     </div>
@@ -671,6 +677,11 @@ class Standards extends Component {
                     </div>
                     <TextGradient/>
                     <ScrollToTop/>
+
+                    <ArticlesSlider
+                        prevArticle='work-order' prevArticleDescription='Рабочий распорядок'
+                        nextArticle='structure' nextArticleDescription='Структура Музея'
+                    />
                 </React.Fragment>
             )
         };

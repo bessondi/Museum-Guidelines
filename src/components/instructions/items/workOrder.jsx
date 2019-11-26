@@ -11,6 +11,8 @@ import ScrollbarTop from "../../header/scrollbar/scrollbarTop";
 import Scrollspy from "react-scrollspy";
 import ScrollToTop from "../scrollToTopBtn/scrollToTopBtn";
 import TextGradient from '../stickyTextGradient';
+import BreadCrumbs from '../../main/breadCrumbs';
+import ArticlesSlider from '../../main/articlesSliderBottom';
 
 
 import radio from "../../../media/radio.jpg";
@@ -975,6 +977,11 @@ class WorkOrder extends Component {
                 <React.Fragment>
                     <ScrollbarTop show='show'/>
 
+                    <BreadCrumbs
+                        firstLevelLink='instructions' firstLevelDescription='Стандарты'
+                        secondLevelDescription='Рабочий распорядок'
+                    />
+
                     <div className={`${styles.wrapper__asidePageNav_hidden}`}>
                         <AsideMenu/>
                     </div>
@@ -996,6 +1003,11 @@ class WorkOrder extends Component {
                     </div>
                     <TextGradient/>
                     <ScrollToTop/>
+
+                    <ArticlesSlider
+                        prevArticle='museum' prevArticleDescription='Знакомство с Музеем'
+                        nextArticle='standards' nextArticleDescription='Стандарты обслуживания'
+                    />
                 </React.Fragment>
             )
         };
