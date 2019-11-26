@@ -1,35 +1,35 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "946df849837991687c496ff738b14856",
+    "revision": "a1652e460b0e025002896fdd4b7b7cc7",
     "url": "/Museum-Guidelines/index.html"
   },
   {
-    "revision": "2348d377095fab6ba12f",
-    "url": "/Museum-Guidelines/static/css/2.563d032c.chunk.css"
+    "revision": "2d1d45afcd772111aa58",
+    "url": "/Museum-Guidelines/static/css/2.67996ba0.chunk.css"
   },
   {
-    "revision": "535abc236be6d8af3d97",
-    "url": "/Museum-Guidelines/static/css/main.f5de2995.chunk.css"
+    "revision": "f0791352820b8068d378",
+    "url": "/Museum-Guidelines/static/css/main.4d2c32b4.chunk.css"
   },
   {
-    "revision": "2348d377095fab6ba12f",
-    "url": "/Museum-Guidelines/static/js/2.ac994493.chunk.js"
+    "revision": "2d1d45afcd772111aa58",
+    "url": "/Museum-Guidelines/static/js/2.2ff7bcf8.chunk.js"
   },
   {
-    "revision": "e852e4cb0060dc47d1a6",
-    "url": "/Museum-Guidelines/static/js/3.4232a03f.chunk.js"
+    "revision": "cb5d128cdb1fe3b99136",
+    "url": "/Museum-Guidelines/static/js/3.b5bec7c9.chunk.js"
   },
   {
-    "revision": "7e979dd8e2e46bd93c09",
-    "url": "/Museum-Guidelines/static/js/4.56d58144.chunk.js"
+    "revision": "a837b1e5c11780702dfa",
+    "url": "/Museum-Guidelines/static/js/4.85036932.chunk.js"
   },
   {
-    "revision": "535abc236be6d8af3d97",
-    "url": "/Museum-Guidelines/static/js/main.cf67b400.chunk.js"
+    "revision": "f0791352820b8068d378",
+    "url": "/Museum-Guidelines/static/js/main.1145c4dd.chunk.js"
   },
   {
-    "revision": "95b168cde1b0ca126ba8",
-    "url": "/Museum-Guidelines/static/js/runtime~main.607c59c8.js"
+    "revision": "241ebd972d21729fe20e",
+    "url": "/Museum-Guidelines/static/js/runtime~main.13550e0b.js"
   },
   {
     "revision": "0b7c3d0fe2789dbcc2476b647e69ed13",
